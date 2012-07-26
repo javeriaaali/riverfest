@@ -1,0 +1,760 @@
+/* CSS Document */
+
+/* TABLE OF CONTENTS
+
+01 - Global Elements
+02 - Main Structure - Background Image, Wrappers, Containers, Columns, clearfix
+03 - Header - Header, Logo, navigation
+04 - Home Page Content - rotating image feature, news, events, video
+05 - Main Content - Interior pages
+06 - Footer - Copyright, contact box   */
+
+/* ---------------- 01 - Global Elements ---------------- */
+
+html,
+body {
+margin:0;
+padding:0;
+height:100%;
+}
+
+a {
+border: none;
+text-decoration:none;
+}
+
+img{
+border: none;
+text-decoration:none;
+}
+
+p {
+font-family:Arial, Helvetica, sans-serif;}
+
+ul li {
+font-size:13px;
+color:#666;
+}
+
+a {
+color: white;}
+
+a:hover {
+text-decoration:underline;}
+
+blockquote {
+color:#999;
+margin:0px;
+font-style:italic;
+line-height:18px;
+font-size:12px;}
+
+.left {
+float:left;
+padding-right:20px;}
+
+.sponsors {
+float:left;
+clear:left;
+padding-top:20px;
+padding-right:20px;}
+
+
+.external-link {
+background:transparent url(../images/external-link.png) no-repeat scroll right center;
+width:65px;
+}
+
+.typography td {font-family:Arial, Helvetica, sans-serif;
+padding-right:0px;font-size:13px;
+padding-bottom:10px;}
+
+.typography option {
+padding-left:20px;}
+
+.typography tr {
+
+font-family:Arial, Helvetica, sans-serif;
+color:white;}
+
+.typography form ul li {
+color:yellow;}
+
+.typography input {
+margin:0px 0px 10px 10px;}
+
+/* ---------------- Typography  ---------------- */	
+
+.typography h1 {
+font-family:Rockwell, Georgia, Times, "Times New Roman", serif;
+font-size:35px;
+color:#F9ED16;
+line-height:33px;
+font-weight:lighter;
+margin-bottom:20px;margin-top:20px;
+border-bottom:3px solid #C56E29;
+padding:0px 0px 9px 0px;	
+}
+
+.typography p {
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+line-height:20px;
+color:white;
+margin-bottom:15px;
+}
+
+.typography h2 {
+font-family:Rockwell, Georgia, Times, "Times New Roman", serif;
+font-size:27px;
+color:#619CAA;
+padding-bottom:5px;
+margin-bottom:5px;
+}
+
+.typography h2 a{
+color:#619CAA;
+}
+
+
+.typography h3  {
+font-family:Rockwell, Georgia, Times, "Times New Roman", serif;
+font-size:18px;
+margin-bottom:5px;
+
+margin-bottom:5px;
+color: #619CAA;
+}
+
+.typography form h3  {
+font-family:Rockwell, Georgia, Times, "Times New Roman", serif;
+font-size:20px;
+margin-bottom:5px;
+font-weight:lighter;
+padding-bottom:8px;
+margin-bottom:10px;
+border-bottom:1px dotted white;
+color: #999;
+}
+
+
+.typography h3 a {
+font-family:"Gill Sans", Arial, Helvetica, sans-serif;
+font-size:21px;
+color:#824208;
+}
+
+.typography h4  {
+font-family:"Gill Sans", Arial, Helvetica, sans-serif;
+font-size:21px;
+color:#8A8C64;
+margin-bottom:5px;
+}
+
+.typography p a {
+text-decoration:underline;}
+
+/* ---------------- 02 - Main Structure - Background Image, Wrappers, Containers, Columns, clearfix ---------------- */
+
+#container {
+min-height:100%;
+position:relative;
+}
+
+#bodywrap {
+height:auto;
+width:auto;
+padding-top:30px;
+padding-bottom:650px;
+background: #133c52 url(../images/wave-background.png) repeat-x 0px -25px;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+#content-wrapper {
+width: 980px;
+height:auto;
+background: url(../images/content-background.png) repeat;
+margin-right: auto;
+margin-top:40px;
+margin-bottom:0px;
+margin-left: auto;
+}
+
+#content-top{
+width: 980px;
+height:20px;
+background: url(../images/top-content.png) no-repeat;
+}
+
+#content-bottom{
+width: 980px;
+height:30px;
+margin-right: auto;
+margin-bottom:0px;
+margin-left: auto;
+background: url(../images/bottom-content.png) no-repeat;
+}
+
+#content {
+margin-left:20px;
+width:650px;}
+
+#event-content {
+margin-left:20px;
+width:520px;}
+
+#events-container {
+width:380px;
+margin-right:20px;
+height:auto;
+float:right;}
+
+#sidebar {
+width:265px;
+margin-top:26px;
+margin-right:20px;
+height:auto;
+float:right;}
+
+
+.clear {
+clear:both;}
+
+
+/* ---------------- 03 - Header - Header, Logo, navigation ---------------- */
+
+/*  Header Elements */
+
+#header {
+width:980px;
+height:155px;
+
+margin-left:auto;
+margin-right:auto;
+}
+
+#header-wrapper {
+width:auto;
+background: url(../images/header.png) repeat-x 0px 5px;
+height:155px;
+}
+
+.hidden
+{position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;}
+
+#logo{
+float: left;
+width: 460px;
+height: 112px;
+background: url(../images/riverfest-logo3.png) no-repeat 0px 0px;
+margin-right: 0pt;
+margin-bottom: 0pt;
+margin-left:70px;
+margin-top:43px;
+}
+
+#logo-text {
+	margin-left: 113px;
+	margin-top: 0px; 
+	font-size: 24px;
+	font-family: Rockwell, Arial, Helvetica, sans-serif;
+	width: 200px;
+	height: 50px;
+}
+
+ul.social-media {
+margin-top:110px;
+list-style-type:none;
+float:right;}
+
+ul.social-media li{
+float:left;}
+
+.uiowa {float:left;
+margin-top:110px;}
+
+#nav {
+width:980px;text-align:center;
+clear:both;margin-top:0px;
+padding-left:60px;
+margin-left:auto;
+margin-right:auto;
+height:72px;}
+
+#nav-container {
+height:34px;
+width: auto;background:black;
+}
+
+.nav, .nav ul { 
+list-style: none;
+margin: 0;
+padding: 0;	
+}
+
+.nav li {
+float: left;
+margin: 0;
+padding:3px 20px 3px 20px;
+margin-right:5px;
+position:relative;
+}
+.nav li a, .nav li a:link, .nav li a:active, .nav li a:visited {
+font-family:Rockwell, Georgia, Times, "Times New Roman", serif;
+font-size:16px;
+color: white;
+font-weight:bold;
+display: block;
+padding: 4px 0px 0px 0px;
+text-decoration: none;
+text-transform:uppercase; 
+}
+
+.nav li a:hover {
+color: #C56E29;	
+}
+
+.nav li.current a {
+color:#ccc;}
+
+
+/* ---------------- 04 - Home Page Content - rotating image feature, news, events, video ---------------- */
+
+
+/* Home Page Image Box */	
+
+.thumbnail-mask1, .thumbnail-mask2, .thumbnail-mask3, .thumbnail-mask4  {
+width:131px;
+height:93px;}
+
+.thumbnail-mask1 {
+background: url(../images/thumb1.png) no-repeat;
+}
+
+.thumbnail-mask2 {
+background: url(../images/thumb2.png) no-repeat;
+}
+
+.thumbnail-mask3 {
+background: url(../images/thumb3.png) no-repeat;
+}
+
+.thumbnail-mask4 {
+background: url(../images/thumb4.png) no-repeat;
+}
+
+
+.ui-tabs-selected .thumbnail-mask1 {
+background: url(../images/thumb1-selected.png) no-repeat;}
+.ui-tabs-selected .thumbnail-mask2 {
+background: url(../images/thumb2-selected.png) no-repeat;}
+.ui-tabs-selected .thumbnail-mask3 {
+background: url(../images/thumb3-selected.png) no-repeat;}
+.ui-tabs-selected .thumbnail-mask4 {
+background: url(../images/thumb4-selected.png) no-repeat;}
+
+
+
+.thumbnail {
+/*background: url(../images/featureimage.jpg) no-repeat;*/
+width:125px;
+height:93px;}
+
+.feature-image {
+width:446px;
+height:310px;
+/*background:url(../images/featureimage.jpg) no-repeat;*/
+float:right;}
+
+.feature-background {
+width:446px;
+height:310px;
+background:url(../images/featureboxmask.png) no-repeat -10px 0px;
+}
+
+.ui-tabs-panel {height:200px;}
+
+#rotate {
+margin-top:0px;
+margin-left:20px;
+width:960px;
+min-height:249px;}
+
+#rotate p {
+color:white;
+width:500px;
+margin:0px;
+line-height:24px;
+font-family: Arial, Helvetica, sans-serif;
+font-size:12px;}
+
+/*  home page feature box typography */
+
+#rotate .ui-tabs-panel h2 
+{
+font-family:Rockwell, Georgia, Times, "Times New Roman", serif;
+font-weight:lighter;
+font-size:35px;
+color:#FFFF00;
+margin-top:10px;
+margin-bottom:0px;
+padding-bottom:6px;
+width:450px;
+border-bottom:3px solid #CC6633;
+}
+
+#rotate .ui-tabs-panel h2 a
+{
+color:#FFFF00;
+
+}
+
+
+
+
+/* Video Player */
+
+#video {
+width:310px;
+float:right;}
+
+/* Audio Player */
+
+#audio {
+margin-left:0px;
+width:304px;
+float:right;}
+
+#player {
+width:250px;background:white;
+padding:10px 0px 0px 10px;
+margin-bottom:20px;
+border:2px solid #ccc;
+height:220px;}
+
+#home-content{
+width: 980px;
+margin-right: auto;
+margin-bottom:0px;
+margin-top:20px;
+margin-left: auto;
+}
+
+#home-content h3, #sidebar h3, #events-container h3 {
+font-family:Rockwell, Georgia, Times, "Times New Roman", serif;
+font-size:28px;
+font-weight:lighter;
+color: #F9ED16;
+padding-bottom:6px;
+border-bottom:3px solid #478ECC;
+width:100px;
+margin-bottom:20px;
+}
+
+#home-content h3 a, #sidebar h3 a, #events-container h3 a {
+color: #F9ED16;
+}
+
+
+
+#events-container h3 {
+width:auto;
+border-bottom:1px dotted white;
+color:white;
+letter-spacing:1px;
+margin-top:23px;
+text-align:center;
+}
+
+/* News Items */
+
+ul.news  h4 a{
+font-family:Rockwell, Georgia, Times, "Times New Roman", serif;
+font-size:18px;
+margin-bottom:5px;
+font-weight:lighter;
+color: #C56E29;
+}
+
+ul.news  p{color:white; padding-right:20px;}
+
+ul.news {}
+
+#news {
+float:left;
+margin-left:20px;
+width:305px;}
+
+ul.news li{margin-bottom:10px;}
+
+
+/* ---------------- 05 - Main Content - Interior pages ---------------- */
+
+/* content page header image */
+
+.content-image {
+width:379px;
+height:271px;
+/*background:url(../images/featureimage.jpg) no-repeat;*/
+float:right;}
+
+.content-image-mask {
+width:379px;
+height:271px;
+background:url(../images/contentboxmask.png) no-repeat 0px 0px;
+float:right;}
+
+/* event box */
+
+.event-image {
+width:249px;
+height:179px;
+/*background:url(../images/image_entertainment_sonnyhumbuckerband.jpg) no-repeat;*/
+float:right;}
+
+.event-image-mask {
+width:249px;
+height:179px;
+background:url(../images/eventboxmask.png) no-repeat 0px 0px;
+}
+
+p.event strong {
+color:#F9ED16;}
+
+p.event {
+color:#ccc;}
+p.event a {
+color:#999;}
+
+.event-box p {
+line-height:17px;}
+
+.event-box img {
+float:right;}
+
+.get_involved .event-box {
+	border-bottom: 1px solid #ccc;}
+	
+.event-box {
+	min-height:195px;
+margin-bottom:40px;
+}
+
+/* Event Schedule */
+
+#box-table-a td {
+color:#666699;
+padding:8px;
+}
+#box-table-a {
+width:380px;
+border-collapse:collapse;
+font-family:"Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+font-size:12px;
+text-align:left;
+}
+
+#box-table-a th {
+color:#619CAA;
+font-family:Rockwell, Georgia, Times, "Times New Roman", serif;
+text-transform:uppercase;
+font-size:13px;
+font-weight:bold;
+padding:8px;
+}
+
+#box-table-a th.time-header {
+color:#afe8f5;}
+
+
+#box-table-a th.stage1 {
+color:#79c6d8;}
+
+
+#box-table-a th.stage2 {
+color:#5f909c;}
+
+#box-table-a td.time {
+/*background:#619CAA;*/
+font-family:Rockwell, Georgia, Times, "Times New Roman", serif;
+text-transform:uppercase;
+color:#C56E29}
+
+#box-table-a td.location {
+/*background:#619CAA;*/
+font-style:italic;
+font-family:Rockwell, Georgia, Times, "Times New Roman", serif;
+color:yellow}
+
+#box-table-a td {
+color:#ccc;
+}
+
+p.note {
+font-style:italic;
+color:#999;}
+
+/* ---------------- 07 - Footer - Copyright  ---------------- */
+
+#footer-container {
+position:absolute;
+bottom:0;
+width:100%;
+text-align: left;
+font-size: 10px;
+padding:0px 0px 20px 0px;
+height: 600px;
+clear: both;
+margin-top:0px;
+background:#057DB1 url(../images/footer-top.png) no-repeat scroll 50% 0;
+}
+
+.footer {
+width:980px;
+min-height:300px;
+margin-left:auto;
+margin-right:auto;
+line-height: 12px;
+text-align: left;
+padding-right:3px;
+padding-left:0px;
+margin-top: 0px;
+padding-top:20px;
+clear: both;
+}
+
+ul.footer-links {
+float:right;
+clear:both;
+width:560px;
+margin-top:-300px;
+list-style-type:none;}
+
+ul.footer-links li {
+padding:0px 0px 0px 20px;
+float:right;}
+
+ul.footer-links li a {
+font-size:14px;
+text-transform:uppercase;
+font-weight:bold;
+color:#133C52;
+font-family:Rockwell, Georgia, Times, "Times New Roman", serif;}
+
+p.address {
+font-size:13px;
+line-height:17px;
+color:white;
+float:right;
+text-align:right;
+clear:both;
+margin-top:-250px;
+list-style-type:none;}
+
+p.address a {
+color:orange;}
+
+img.footer-logo {
+margin-top:150px;
+float:right;}
+
+/* Footer contact form */	
+
+#contact {
+background: url(../images/footer-contact.png) repeat-x -5px -15px;
+margin-top:100px;
+width:320px;
+padding:50px 20px 0px 30px;
+height:400px;}
+
+#contact p.contact-title {
+font-family:Rockwell, Georgia, Times, "Times New Roman", serif;
+text-align:center;
+font-size:17px;
+line-height:18px;
+color:#bde4f6;}
+
+.cssform {
+width:300px;
+margin-top:10px;
+margin-left:20px;
+}
+
+.cssform p{
+clear: left;
+margin: 0;
+padding: 5px 0 8px 0;
+/*width of left column containing the label elements*/
+height: 1%;
+}
+
+.cssform label{
+font-weight: bold;
+float: left;
+width: 150px; /*width of labels. Should be smaller than left column (155px) to create some right margin*/
+}
+
+.cssform label.name {
+float: left;
+width: 60px;
+height: 18px;
+margin-bottom:5px;
+background: url(../images/name.png) no-repeat 0px 0px;
+text-indent: -9999px;
+}
+
+.cssform label.email {
+float: left;
+width: 120px;
+height: 18px;
+margin-top:10px;
+margin-bottom:5px;
+background: url(../images/email.png) no-repeat 0px -3px;
+text-indent: -9999px;
+}
+
+.cssform label.comments {
+float: left;
+width: 120px;
+height: 18px;
+margin-top:10px;
+margin-bottom:5px;
+background: url(../images/comments.png) no-repeat 0px 0px;
+text-indent: -9999px;
+}
+
+.cssform input[type="text"]{ /*width of text boxes. IE6 does not understand this attribute*/
+width: 180px;
+}
+
+.cssform textarea{
+width: 250px;
+margin-bottom:10px;
+}
+
+/*.threepxfix class below:
+Targets IE6- ONLY. Adds 3 pixel indent for multi-line form contents.
+to account for 3 pixel bug: http://www.positioniseverything.net/explorer/threepxtest.html
+*/
+
+* html .threepxfix{
+margin-left: 3px;
+}
+
+p.copywright {
+font-size:12px;
+margin-left:20px;}
+
+	
+.more a {
+float:left;
+color:#804f28;
+margin-top:5px;
+text-transform:uppercase;
+font: bold 8px Arial, Helvetica, sans-serif;
+}
