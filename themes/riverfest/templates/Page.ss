@@ -57,7 +57,7 @@
 
 <div id="logo">
 
-<h2 id="logo-text">April 23 - 29, 2012</h2>
+<h2 id="logo-text">April 22 - 27, 2013</h2>
 
 </div> 
 
