@@ -25,9 +25,9 @@ class StaffPage extends Page {
 function getCMSFields() {
 	$fields = parent::getCMSFields();
 	
-	$fields->addFieldToTab('Root.Content.Main', new TextField('StaffTitle', 'Staff Title '));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('StaffEmail', 'Staff Email '));
-	$fields->addFieldToTab('Root.Content.Images', new ImageField('StaffImage', 'Staff Image 469x331 pixels'));
+	$fields->addFieldToTab('Root.Main', new TextField('StaffTitle', 'Staff Title '));
+	$fields->addFieldToTab('Root.Main', new TextField('StaffEmail', 'Staff Email '));
+	$fields->addFieldToTab('Root.Images', new UploadField('StaffImage', 'Staff Image 469x331 pixels'));
 
 
 	

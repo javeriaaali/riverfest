@@ -9,7 +9,7 @@
 
 $Content
 
-<% control ChildrenOf(Staff-Holder) %>
+<% loop ChildrenOf(Staff-Holder) %>
 <div class="event-box">
 <div class="event-image" style="background: url($StaffImage.URL) no-repeat;"><div class="event-image-mask"></div></div>
 $StaffImage.SetWidth(300)
@@ -18,7 +18,7 @@ $StaffImage.SetWidth(300)
 
 <p>$Content</p> 
 </div>
-<% end_control %>
+<% end_loop %>
 
 
 </div>

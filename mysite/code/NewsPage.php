@@ -25,7 +25,7 @@ class NewsPage extends Page {
 function getCMSFields() {
 	$fields = parent::getCMSFields();
 	
-	$fields->addFieldToTab('Root.Content.Images', new ImageField('NewsImage', 'News Image'));
+	$fields->addFieldToTab('Root.Images', new UploadField('NewsImage', 'News Image'));
 
 
 	

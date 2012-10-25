@@ -7,11 +7,11 @@
 
 	background: url(
 	
-	<% control NewsImage.SetWidth(354) %>
+	<% with NewsImage.SetWidth(354) %>
 	
 	$Filename
 	
-	<% end_control %>
+	<% end_with %>
 	) no-repeat;
 }
 

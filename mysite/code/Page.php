@@ -21,21 +21,26 @@ class Page_Controller extends ContentController {
 		Requirements::themedCSS("form"); 
 	}
 	
-		function Home($limit=4) {
-		$set = DataObject::get("HomePageTab", null, null, null, $limit);
-		
+	function Home($limit=4) {
+		//$set = DataObject::get("HomePageTab", null, null, null, $limit);
+		$set = HomePageTab::get()->Limit(4);
+	
 		return $set;
+	
 	}
 	
 	function Events($limit=3) {
-		$set = DataObject::get("EventsPage", null, null, null, $limit);
+		//$set = DataObject::get("EventsPage", null, null, null, $limit);
+		$set = EventsPage::get()->Limit(4);
+
 		
 		return $set;
 	}
 	
 	
 		function News($limit=3) {
-		$set = DataObject::get("NewsPage", null, null, null, $limit);
+		//$set = DataObject::get("NewsPage", null, null, null, $limit);
+		$set = NewsPage::get()->Limit(4);
 		
 		return $set;
 	}

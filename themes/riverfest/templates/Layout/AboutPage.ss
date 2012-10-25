@@ -10,14 +10,14 @@
 $Content
 
 <h1>Staff</h1>
-<% control ChildrenOf(Staff-Holder) %>
+<% loop ChildrenOf(Staff-Holder) %>
 
 
 <div class="event-box">
 
 <% if StaffImage %>
 
-<div class="event-image" style="background: url(<% control StaffImage.SetWidth(240) %>$Filename<% end_control %>) no-repeat 0px 10px;">
+<div class="event-image" style="background: url(<% with StaffImage.SetWidth(240) %>$Filename<% end_with %>) no-repeat 0px 10px;">
 <div class="event-image-mask"></div></div>
 
 <% end_if %> 
@@ -32,7 +32,7 @@ $Content
 <a href="$Link">Read More</a>
 </span>
 </div>
-<% end_control %>
+<% end_loop %>
 
 
 </div>

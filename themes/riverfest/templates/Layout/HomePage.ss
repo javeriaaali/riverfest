@@ -12,15 +12,13 @@
 <div id="rotate">
 
 
-<% control Home %>
-
-
+<% loop Home %>
 
 <div <% if First %>class="ui-tabs-panel" <% else %> class="ui-tabs-panel ui-tabs-hide"<% end_if %> id="tab$Pos">
 
 <% if FeatureImage %>
 
-<div class="feature-image" style="background: url(<% control FeatureImage.SetWidth(469) %>$Filename<% end_control %>) no-repeat 14px 6px;">
+<div class="feature-image" style="background: url(<% with FeatureImage.SetWidth(469) %>$Filename<% end_with %>) no-repeat 14px 6px;">
 <div class="feature-background"></div></div>
 
 <% end_if %>
@@ -35,7 +33,7 @@
 <a href="$Link">Read More</a>
 </span>
            </div> 
-<% end_control %>
+<% end_loop %>
 
 
 
@@ -44,19 +42,19 @@
 <ul class="ui-tabs-nav">
 
 
-<% control Home %>
+<% loop Home %>
 
 <li id="menu$Pos" <% if First %>class="ui-tabs-selected"<% end_if %>>
 
 
 <% if FeatureImage %>
 
-<div class="thumbnail" style="background: url(<% control FeatureImage.SetWidth(115) %>$Filename<% end_control %>) no-repeat 4px 6px;">
+<div class="thumbnail" style="background: url(<% with FeatureImage.SetWidth(115) %>$Filename<% end_with %>) no-repeat 4px 6px;">
 <div class="thumbnail-mask$Pos"><a href="#tab$Pos"></a></div></div>
 <% end_if %>
 
 </li>
-<% end_control %>
+<% end_loop %>
 </ul>
 
 
@@ -112,11 +110,11 @@
 
 <ul class="news">
 
-<% control Events %>
+<% loop Events %>
 <li>
 <h4><a href="$Link">$Title</a></h4>
 <p>$Content.LimitWordCount(20)</p></li>
-<% end_control %>
+<% end_loop %>
 
 </ul>
 <span class="more">
@@ -136,11 +134,11 @@
 <h3>News</h3>
 <ul class="news">
 
-<% control ChildrenOf(News-Holder) %>
+<% loop News %>
 <li>
 <h4><a href="$Link">$Title</a></h4>
 <p>$Content.LimitWordCount(20)</p></li>
-<% end_control %>
+<% end_loop %>
 
 </ul>
 </div>

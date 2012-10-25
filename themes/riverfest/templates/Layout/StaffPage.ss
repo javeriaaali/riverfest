@@ -7,11 +7,11 @@
 
 	background: url(
 	
-	<% control StaffImage.SetWidth(354) %>
+	<% with StaffImage.SetWidth(354) %>
 	
 	$Filename
 	
-	<% end_control %>
+	<% end_with %>
 	) no-repeat 0px 10px;
 }
 

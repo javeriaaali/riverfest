@@ -18,9 +18,7 @@ class PerformingPage extends Page {
    function getCMSFields() {
    $fields = parent::getCMSFields();
    
-   
-
-    		$fields->addFieldToTab('Root.Content.Images', new ImageField('ContentImage', 'Event Image 469x331 pixels'));
+   $fields->addFieldToTab('Root.Images', new UploadField('ContentImage', 'Event Image 469x331 pixels'));
 
    return $fields;
 }

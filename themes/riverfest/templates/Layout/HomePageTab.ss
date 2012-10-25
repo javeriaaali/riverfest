@@ -8,11 +8,11 @@
 
 	background: url(
 	
-	<% control FeatureImage.SetWidth(354) %>
+	<% with FeatureImage.SetWidth(354) %>
 	
 	$Filename
 	
-	<% end_control %>
+	<% end_with %>
 	) no-repeat;
 }
 

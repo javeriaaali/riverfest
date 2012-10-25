@@ -18,12 +18,12 @@ class HomePage extends Page {
    function getCMSFields() {
    $fields = parent::getCMSFields();
    
-   $fields->removeFieldFromTab("Root.Content.Main","Content");
+   $fields->removeFieldFromTab("Root.Main","Content");
    
- 	$fields->addFieldToTab('Root.Content.LeftColumn', new HTMLEditorField('Content1','Content 1:'));
-	$fields->addFieldToTab('Root.Content.RightColumn', new HTMLEditorField('Content2','Content 2:'));
-	$fields->addFieldToTab('Root.Content.RightColumn2', new HTMLEditorField('Content3','Content 3:'));
-	$fields->addFieldToTab('Root.Content.LeftColumn2', new HTMLEditorField('Content4','Content 4:'));
+ 	$fields->addFieldToTab('Root.LeftColumn', new HTMLEditorField('Content1','Content 1:'));
+	$fields->addFieldToTab('Root.RightColumn', new HTMLEditorField('Content2','Content 2:'));
+	$fields->addFieldToTab('Root.RightColumn2', new HTMLEditorField('Content3','Content 3:'));
+	$fields->addFieldToTab('Root.LeftColumn2', new HTMLEditorField('Content4','Content 4:'));
 
     	
 
