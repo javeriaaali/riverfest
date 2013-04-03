@@ -43,21 +43,17 @@
 
 <div id="container">
 <div id="header-wrapper"> 
-<div id="header"> 
- 
-<ul class="social-media">
-<li><a href="/"><img src="$ThemeDir/images/rss.png" width="34" height="35" alt="RSS" title="RSS" /></a></li>
-<li><a href="/"><img src="$ThemeDir/images/twitter.png" width="34" height="35" alt="Twitter" title="Twitter" /></a></li>
-<li><a href="http://www.myspace.com/riverfestiowa"  target="_blank"><img src="$ThemeDir/images/myspace.png" width="34" height="35" alt="Myspace" title="Myspace" /></a></li>
-<li><a href="http://www.facebook.com/pages/RiverFest/26706815186" target="_blank"><img src="$ThemeDir/images/facebook.png" width="34" height="35" alt="facebook" title="Facebook" /></a></li>
-</ul>
 
-<a href="http://www.uiowa.edu" target="blank"><img class="uiowa" src="$ThemeDir/images/uiowa-logo.png" width="219" height="31" alt="University of Iowa" title="The University of Iowa" longdesc="http://www.uiowa.edu" /></a>
+
+<div id="header"> 
+ <a href="http://www.uiowa.edu" target="blank"><img class="uiowa" src="$ThemeDir/images/uiowa-logo.png" alt="University of Iowa" title="The University of Iowa" longdesc="http://www.uiowa.edu" /></a>
+ <div class="clear"></div>
+
 
 
 <div id="logo">
 
-<h2 id="logo-text">April 22 - 27, 2013</h2>
+<h2><img src="{$ThemeDir}/images/logo2013.png" alt="RiverFest 2013 - April 22-28, 2013" /></h2>
 
 </div> 
 

@@ -166,7 +166,7 @@ height:auto;
 width:auto;
 padding-top:30px;
 padding-bottom:650px;
-background: #133c52 url(../images/wave-background.png) repeat-x 0px -25px;
+background: #133c52;
 font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -175,7 +175,7 @@ width: 980px;
 height:auto;
 background: url(../images/content-background.png) repeat;
 margin-right: auto;
-margin-top:40px;
+/*margin-top:40px;*/
 margin-bottom:0px;
 margin-left: auto;
 }
@@ -235,8 +235,13 @@ margin-right:auto;
 
 #header-wrapper {
 width:auto;
-background: url(../images/header.png) repeat-x 0px 5px;
-height:155px;
+background-color: black;
+
+background-image: url(../images/header.jpg);
+background-repeat: no-repeat;
+
+height: 348px;
+background-position: 500px 0;
 }
 
 .hidden
@@ -249,12 +254,12 @@ overflow:hidden;}
 
 #logo{
 float: left;
-width: 460px;
+/*width: 460px;
 height: 112px;
-background: url(../images/riverfest-logo3.png) no-repeat 0px 0px;
+background: url(../images/riverfest-logo3.png) no-repeat 0px 0px;*/
 margin-right: 0pt;
 margin-bottom: 0pt;
-margin-left:70px;
+margin-left:0;
 margin-top:43px;
 }
 
@@ -268,7 +273,8 @@ margin-top:43px;
 }
 
 ul.social-media {
-margin-top:110px;
+/*margin-top:310px;*/
+margin-top: -2px;
 list-style-type:none;
 float:right;}
 
@@ -276,12 +282,14 @@ ul.social-media li{
 float:left;}
 
 .uiowa {float:left;
-margin-top:110px;}
+
+}
 
 #nav {
-width:980px;text-align:center;
+width:980px;
+text-align:center;
 clear:both;margin-top:0px;
-padding-left:60px;
+/*padding-left:60px;*/
 margin-left:auto;
 margin-right:auto;
 height:72px;}
@@ -758,3 +766,17 @@ margin-top:5px;
 text-transform:uppercase;
 font: bold 8px Arial, Helvetica, sans-serif;
 }
+
+
+@media only screen and (min-width: 1300px){
+	#header-wrapper {
+	background-position: 900px 0;
+	}
+}
+
+
+@media only screen and (min-width: 1900px){
+	#header-wrapper {
+	background-position: 1300px 0;
+	}
+}   
