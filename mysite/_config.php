@@ -34,4 +34,9 @@ Director::set_environment_type("live");
 // downloaded from http://www.silverstripe.com/themes/
 SSViewer::set_theme('riverfest');
 
+if(Director::isLive()) {
+	Director::forceSSL(array('/^Security/','/^admin/'));
+}
+
+
 ?>
